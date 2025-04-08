@@ -51,7 +51,7 @@ class AppColors {
 
   // nav gray col
 
-  static const Color navGray = Color(0xFF7D7F88);
+  static const Color navGray = Color(0xFF9CA3AF);
 
   AppColors._();
 }

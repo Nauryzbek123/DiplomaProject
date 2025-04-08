@@ -78,8 +78,8 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GreenButton('Toggle System', 'toggle'),
-                GreenButton('Water Now', 'water'),
+                GreenButton('Toggle System', 'toggle', AppColors.lightGreyColor, AppColors.whiteColor),
+                GreenButton('Water Now', 'water', AppColors.lightGreyColor, AppColors.whiteColor),
               ],
             ),
             ColumnSpacer(3)

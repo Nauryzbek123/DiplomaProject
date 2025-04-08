@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/src/core/resources/app_colors.dart';
 import 'package:flutter_application_1/src/core/resources/manrope_text.dart';
 import 'package:flutter_application_1/src/core/widgets/column_spacer.dart';
+import 'package:flutter_application_1/src/features/app/widgets/card_widget.dart';
+import 'package:flutter_application_1/src/features/app/widgets/green_button.dart';
 import 'package:flutter_application_1/src/features/app/widgets/owner_image_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -44,12 +46,28 @@ class ProfileScreen extends StatelessWidget {
               height: 200,
               width: width,
               color: AppColors.lightGreyColor,
-              child: Stack( 
-                children: [
-                  OwnerImageWidget()
-                ],
-              ),
+              child: Stack(children: [OwnerImageWidget()]),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                GreenButton(
+                  'Add Plant',
+                  'addPlant',
+                  AppColors.lightGreyColor,
+                  AppColors.whiteColor,
+                ),
+                GreenButton(
+                  'Filter',
+                  'filter',
+                  AppColors.whiteColor,
+                  AppColors.lightGreyColor,
+                ),
+              ],
+            ),
+            CardWidget('ssss'),
+            CardWidget('ssss'),
+            CardWidget('ssss'),
           ],
         ),
       ),

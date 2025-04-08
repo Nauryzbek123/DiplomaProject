@@ -6,8 +6,10 @@ import 'package:flutter_svg/svg.dart';
 class GreenButton extends StatelessWidget {
   final String text;
   final String svg;
+  final Color color;
+  final Color textColor;
 
-  const GreenButton(this.text, this.svg, {super.key});
+  const GreenButton(this.text, this.svg,this.color, this.textColor, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +33,12 @@ class GreenButton extends StatelessWidget {
           SvgPicture.asset('assets/svg/$svg.svg'),
           Padding(
             padding: const EdgeInsets.only(left: 5),
-            child: ManropeText(text, 14, AppColors.whiteColor, FontWeight.normal),
+            child: ManropeText(
+              text,
+              14,
+              AppColors.whiteColor,
+              FontWeight.normal,
+            ),
           ),
         ],
       ),
