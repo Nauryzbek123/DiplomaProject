@@ -45,7 +45,7 @@ class RoundedContainer extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(right: 10),
-                child: Icon(icon, size: 14, color: AppColors.GreenColor),
+                child: Icon(icon, size: 18, color: AppColors.GreenColor),
               ),
             ],
           ),

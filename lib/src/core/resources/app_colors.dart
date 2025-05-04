@@ -4,9 +4,9 @@ class AppColors {
   // Black text color
   static const Color blackColor = Color(0xFF1D1617);
   // Grey light text color
-  static const Color greyLightColor = Color(0xFFB6B4C2);
+  static const Color greyLightColor = Color(0xFF4B5563);
   // Red color
-  static const Color redColor = Color(0xFFEC1E24);
+  static const Color borderColor = Color(0xFFF3F4F6);
   // White color
   static const Color whiteColor = Color(0xFFFFFFFF);
   // TextField color
@@ -35,7 +35,7 @@ class AppColors {
   static const Color StarColor = Color(0xFFE4A70A);
 
   // Bold Red
-  static const Color RedBold = Color(0xFFD40000);
+  static const Color Red = Color(0xFFDEF4444);
 
   // Green color
   static const Color GreenColor = Color(0xFF5EB161);
@@ -52,6 +52,8 @@ class AppColors {
   // nav gray col
 
   static const Color navGray = Color(0xFF9CA3AF);
+
+  static const Color borderColorLang = Color(0xFFE5E7EB);
 
   AppColors._();
 }

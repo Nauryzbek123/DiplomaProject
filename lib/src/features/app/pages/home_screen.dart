@@ -23,12 +23,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 10),
-                  child: ManropeText(
-                    'logo',
-                    20,
-                    AppColors.boldBlackColor,
-                    FontWeight.w600,
-                  ),
+                  child: Image.asset('assets/jpg/logo.jpg', height: 40),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 10),
@@ -61,27 +56,27 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 RoundedContainer('Temperature', '24°C', Icons.thermostat),
-                RoundedContainer('Temperature', '24°C', Icons.thermostat),
+                RoundedContainer('Humidity', '65%', Icons.water_drop),
               ],
             ),
             ColumnSpacer(2),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                RoundedContainer('Temperature', '24°C', Icons.thermostat),
-                RoundedContainer('Temperature', '24°C', Icons.thermostat),
+                RoundedContainer('Soil Moisture', '78%', Icons.line_axis_outlined),
+                RoundedContainer('Light Level', '850 lux', Icons.sunny),
               ],
             ),
             ColumnSpacer(2),
             TrendsChartWidget(),
             ColumnSpacer(1),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                GreenButton('Toggle System', 'toggle', AppColors.lightGreyColor, AppColors.whiteColor),
-                GreenButton('Water Now', 'water', AppColors.lightGreyColor, AppColors.whiteColor),
-              ],
-            ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //   children: [
+            //     GreenButton('Toggle System', 'toggle', AppColors.lightGreyColor, AppColors.whiteColor, 163.5),
+            //     GreenButton('Water Now', 'water', AppColors.lightGreyColor, AppColors.whiteColor, 163.5),
+            //   ],
+            // ),
             ColumnSpacer(3)
           ],
         ),

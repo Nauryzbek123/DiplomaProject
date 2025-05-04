@@ -42,12 +42,20 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ],
             ),
+            ColumnSpacer(1),
             Container(
-              height: 200,
+              height: 154,
               width: width,
               color: AppColors.lightGreyColor,
-              child: Stack(children: [OwnerImageWidget()]),
+              child: Stack(
+                alignment: Alignment.bottomCenter,
+                children: [Padding(
+                  padding: const EdgeInsets.only(bottom: 0.1),
+                  child: OwnerImageWidget(),
+                )],
+              ),
             ),
+            ColumnSpacer(2),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -56,17 +64,22 @@ class ProfileScreen extends StatelessWidget {
                   'addPlant',
                   AppColors.lightGreyColor,
                   AppColors.whiteColor,
+                  163.5
                 ),
                 GreenButton(
                   'Filter',
                   'filter',
                   AppColors.whiteColor,
                   AppColors.lightGreyColor,
+                  163.5
                 ),
               ],
             ),
+            ColumnSpacer(2),
             CardWidget('ssss'),
+            ColumnSpacer(1),
             CardWidget('ssss'),
+            ColumnSpacer(1),
             CardWidget('ssss'),
           ],
         ),

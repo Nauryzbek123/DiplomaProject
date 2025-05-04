@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "673577336633",
+    "project_id": "greenhouse-management-sy-5e9d4",
+    "storage_bucket": "greenhouse-management-sy-5e9d4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673577336633:android:4faec4d66d76ac0a3cf2e8",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673577336633-736dipkektedd2fgo341cnj1sk6moi1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnpfblVdEWADFE0ajC5NigKUt7WUSC8HI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673577336633-736dipkektedd2fgo341cnj1sk6moi1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/src/core/resources/app_colors.dart';
 import 'package:flutter_application_1/src/core/resources/manrope_text.dart';
+import 'package:flutter_application_1/src/core/widgets/row_spacer.dart';
 
 class OwnerImageWidget extends StatelessWidget {
-
   const OwnerImageWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 343,
+      width: 360,
       height: 112,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
@@ -23,9 +23,14 @@ class OwnerImageWidget extends StatelessWidget {
         ],
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          CircleAvatar(backgroundColor: Colors.brown.shade800),
+          RowSpacer(2),
+          CircleAvatar(radius: 30, backgroundColor: Colors.brown.shade800),
+          RowSpacer(2),
           Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ManropeText(
                 'Nurlan Suleimenov',
